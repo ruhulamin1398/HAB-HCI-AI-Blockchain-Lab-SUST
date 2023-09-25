@@ -1231,8 +1231,7 @@ function HomeHero(props) {
       </div>
     </div>
 
-<Todos/>
-<AddTodo/>
+
 
 </>
     );
