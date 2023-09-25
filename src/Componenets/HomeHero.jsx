@@ -1,4 +1,6 @@
 import React from 'react';
+import Todos from './Todos';
+import AddTodo from './AddTodo';
 
 function HomeHero(props) {
     return (
@@ -1229,7 +1231,8 @@ function HomeHero(props) {
       </div>
     </div>
 
-
+<Todos/>
+<AddTodo/>
 
 </>
     );
