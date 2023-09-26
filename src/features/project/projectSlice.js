@@ -7,8 +7,10 @@ const initialState = {
         {
             id:1 , 
             title: "project 1 ", 
+            test: 'test',
             members:{
-               id: 1212,
+                id: 1212,
+                name: 'hello',
                link: "#" 
             }
         }
@@ -26,9 +28,10 @@ export const projectSlice= createSlice({
         addProject: (state , action) =>{
             const project = {
                 id: nanoid(),
-                title: action.payload,
+                title: action.payload.title,
+                test: action.payload.test,
                 // members: action.payload,
-                members: {}
+                members: action.payload.member
             }
             state.projects.push(project)
 

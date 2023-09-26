@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addProject } from '../features/project/projectSlice';
+import { nanoid } from '@reduxjs/toolkit';
  
 
 function Projects() {
@@ -11,7 +12,15 @@ function Projects() {
 
     const dispatch = useDispatch()
     function createNewProject(){
-        dispatch(addProject('hahah project'))
+        const newProject = {title: "hi ",
+         test : "hi test",
+         member:{
+            id: nanoid(),
+            link: "#/asjfkslajf",
+            name: "hello saif",
+         },
+        }
+        dispatch(addProject(newProject))
         console.log('done project add')
     }
 
@@ -34,7 +43,7 @@ function Projects() {
         <>
        
                     
-                    <div className='mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded text-lg text-red-100'>#{project.id} -- {project.title} </div>
+                    <div className='mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded text-lg text-red-100'>#{project.id} -- {project.test} --{project.title} </div>
         </>
                 ))
             }

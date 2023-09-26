@@ -11,11 +11,11 @@ function Home() {
         
 <HomeHero/>
 
-<Projects/>
+  <Projects/>  
 
-<Todos/>  
+{/* <Todos/>  
   <AddTodo/>
-<Peoples/>
+<Peoples/>   */}
 
 
  </>
