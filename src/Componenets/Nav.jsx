@@ -11,7 +11,7 @@ const Nav = () =>{
         
         
         <div
-      className="ud-header fixed top-0 left-0 z-40 flex w-full items-center bg-transparent  "
+      className="ud-header fixed top-0 left-0 z-40 flex w-full items-center bg-[#002145]  " id="navbar"
     >
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">

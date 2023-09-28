@@ -8,12 +8,9 @@ import Todos from "./Componenets/Todos";
 function Home() {
     return ( 
         <>
-        
-        <Nav/>
+ 
         <HomeHero/>
-        <HomeHero/>
-        <HomeHero/>
-        <HomeHero/>
+      
 
   {/* <Projects/>   */}
 

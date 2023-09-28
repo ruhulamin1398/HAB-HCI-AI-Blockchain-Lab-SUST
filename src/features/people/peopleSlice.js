@@ -1,7 +1,8 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit"
+import { peoplesList } from "./peopleList"
 
 const initialState = {
-    peoples: [{id: 1, text: "Hello world"}]
+    peoples: peoplesList
 }
 
  
@@ -11,14 +12,14 @@ export const peopleSlice = createSlice(
     initialState,
     reducers:{
         addPeople: (state, action) => {
-            const people = {
-                id: nanoid(), 
-                text: action.payload
-            }
-            state.peoples.push(people)
+            // const people = {
+            //     id: nanoid(), 
+            //     text: action.payload
+            // }
+            // state.peoples.push(people)
         },
         removePeople: (state, action) => {
-            state.peoples = state.peoples.filter((people) => people.id !== action.payload )
+            // state.peoples = state.peoples.filter((people) => people.id !== action.payload )
         },
 
     }

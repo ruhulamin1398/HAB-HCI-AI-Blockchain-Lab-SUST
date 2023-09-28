@@ -10,7 +10,7 @@ function HomeHero(props) {
 
 <div
       id="home"
-      className="relative overflow-hidden  bg-[#002145] pt-[120px] md:pt-[130px] lg:pt-[160px] md:pb-[130px]"
+      className="relative overflow-hidden  bg-[#002145] pt-[120px] md:pt-[130px] lg:pt-[200px] md:pb-[180px]"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
