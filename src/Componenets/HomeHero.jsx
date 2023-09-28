@@ -10,7 +10,7 @@ function HomeHero(props) {
 
 <div
       id="home"
-      className="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+      className="relative overflow-hidden  bg-[#002145] pt-[120px] md:pt-[130px] lg:pt-[160px] md:pb-[130px]"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
@@ -73,19 +73,19 @@ function HomeHero(props) {
             </div>
           </div>
 
-          <div className="w-full px-4 pb-6">
+          {/* <div className="w-full px-4 pb-6">
             <div
               className="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
               data-wow-delay=".25s"
             >
-              {/* <div className="mt-16">
+              <div className="mt-16">
                 <img
-                  src="assets/images/hero/learn_human_computer_interaction.jpg"
+                  src="assets/images/hero.jpg"
                   alt="hero"
                   className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
                 />
-              </div> */}
-              {/* <div className="absolute bottom-0 -left-9 z-[-1]">
+              </div>
+              <div className="absolute bottom-0 -left-9 z-[-1]">
                 <svg
                   width="134"
                   height="106"
@@ -1224,9 +1224,12 @@ function HomeHero(props) {
                     fill="white"
                   />
                 </svg>
-              </div> */}
+              </div>
             </div>
-          </div>
+          </div> */}
+
+
+
         </div>
       </div>
     </div>

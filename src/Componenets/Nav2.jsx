@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import NavigatrionUL from "./NavigatrionUL";
 
 
-const Nav = () =>{
+const Nav2 = () =>{
 
 
 
@@ -11,12 +11,12 @@ const Nav = () =>{
         
         
         <div
-      className="ud-header fixed top-0 left-0 z-40 flex w-full items-center bg-transparent  "
+      className="ud-header fixed top-0 left-0 z-40 flex w-full items-center bg-[#002145]  "
     >
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-4">
-          <Link to="/" className="navbar-logo block w-full py-5">
+            <Link to="/" className="navbar-logo block w-full py-5">
               <img
                 src="assets/images/logo/logo.png"
                 alt="logo"
@@ -42,7 +42,7 @@ const Nav = () =>{
               </button>
               <div>
 
-                <h1 className="mb-0 text-xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug   md:leading-snug"> SUST HCI AI & Blockcahin Reserach Lab (HAB)</h1>
+                <h1 className="mb-0 text-xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug   md:leading-snug"> SUST HCI AI & Blockcahin Reserach Lab (HAB) </h1>
               <nav
                 id="navbarCollapse"
                 className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white pt-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:pr-4 lg:shadow-none xl:pr-6"
@@ -78,4 +78,4 @@ const Nav = () =>{
 }
 
 
-export  default Nav;
+export  default Nav2;
