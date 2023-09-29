@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { updateFoo } from './features/fooSlice';
 import HomeHero from './Componenets/HomeHero'; 
 import './assets/customjs'
-import Footer from './Componenets/footer';
+import Footer from './Componenets/Footer';
  
  
  function Layout() {
