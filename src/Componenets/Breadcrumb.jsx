@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Breadcrumb({title,subPages, imageUrl}) {
   
@@ -27,13 +28,13 @@ function Breadcrumb({title,subPages, imageUrl}) {
   };
 
   return (
-    <div className="relative h-[600px] text-center" style={containerStyle}>
+    <div className="relative h-[500px] text-center" style={containerStyle}>
       <div style={imageOverlayStyle}></div>
       <div className='grid place-items-center h-full' style={textOverlayStyle}>
         <div>
         <ul className="flex p-4 text-white space-x-2 text-center">
           <li>
-            <a href="/" className="hover:text-blue-300">HAB &raquo;  Home</a>
+            <Link to="/" className="hover:text-blue-300">HAB &raquo;  Home</Link>
           </li>
           <li>/</li>
 
@@ -43,7 +44,7 @@ function Breadcrumb({title,subPages, imageUrl}) {
             subPages.map((page)=>(
               <>
                <li>
-            <a href={page.link} className="hover:text-blue-300">{page.title}</a>
+            <Link  to={page.link} className="hover:text-blue-300">{page.title}</Link>
           </li>
           <li>/</li>
               

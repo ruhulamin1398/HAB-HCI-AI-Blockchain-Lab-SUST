@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
  
 
  
@@ -18,7 +19,7 @@ function MemberGrid({members}) {
 
     const elements = members.map((member)=> (
         <div className="w-full px-4 sm:w-1/2 lg:w-1/4">
-        <div className="wow fadeInUp mb-10  " data-wow-delay=".1s">
+        <div className="wow fadeInUp mb-10  border py-4 " data-wow-delay=".1s">
           <div
             className="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
           >
@@ -449,7 +450,9 @@ function MemberGrid({members}) {
              {member.name}
             </h4>
             <p className="mb-5 text-sm font-medium text-white bg-[#002145] w-[100px] p-1 mx-auto">
-              Profile
+
+              <Link to={`/people/${member.name}`}>    Profile </Link>
+            
             </p>
             <div className="flex items-center justify-center">
               <a

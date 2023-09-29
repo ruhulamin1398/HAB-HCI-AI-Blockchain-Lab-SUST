@@ -20,18 +20,18 @@ function Footer( ) {
             <div class="mb-10 w-full">
               <a
                 href="javascript:void(0)"
-                class="mb-6 inline-block max-w-[160px]"
+                class="mb-6 inline-block max-w-[120px]"
               >
                 <img
-                  src="assets/images/logo/logo.png"
+                  src="/assets/images/logo/logo.png"
                   alt="logo"
-                  class="max-w-full"
+                  class="max-w-100"
                 />
               </a>
-              <p class="mb-7 text-base text-[#f3f4fe]">
+              {/* <p class="mb-7 text-base text-[#f3f4fe]">
                 We create digital experiences for brands and companies by using
                 technology.
-              </p>
+              </p> */}
               <div class="-mx-3 flex items-center">
                 <a
                   href="javascript:void(0)"
@@ -233,7 +233,7 @@ function Footer( ) {
                     class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
-                      src="assets/images/footer/brands/tailgrids.svg"
+                      src="/assets/images/footer/brands/tailgrids.svg"
                       alt="tailgrids"
                     />
                   </a>
@@ -246,7 +246,7 @@ function Footer( ) {
                     class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
-                      src="assets/images/footer/brands/ayroui.svg"
+                      src="/assets/images/footer/brands/ayroui.svg"
                       alt="ayroui"
                     />
                   </a>
@@ -259,7 +259,7 @@ function Footer( ) {
                     class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
-                      src="assets/images/footer/brands/ecommerce-html.svg"
+                      src="/assets/images/footer/brands/ecommerce-html.svg"
                       alt="ecommerce-html"
                     />
                   </a>
@@ -272,7 +272,7 @@ function Footer( ) {
                     class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
-                      src="assets/images/footer/brands/graygrids.svg"
+                      src="/assets/images/footer/brands/graygrids.svg"
                       alt="graygrids"
                     />
                   </a>
@@ -285,7 +285,7 @@ function Footer( ) {
                     class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
-                      src="assets/images/footer/brands/lineicons.svg"
+                      src="/assets/images/footer/brands/lineicons.svg"
                       alt="lineicons"
                     />
                   </a>
@@ -298,7 +298,7 @@ function Footer( ) {
                     class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
-                      src="assets/images/footer/brands/uideck.svg"
+                      src="/assets/images/footer/brands/uideck.svg"
                       alt="uideck"
                     />
                   </a>
@@ -359,11 +359,11 @@ function Footer( ) {
 
       <div>
         <span class="absolute left-0 top-0 z-[-1]">
-          <img src="assets/images/footer/shape-1.svg" alt="" />
+          <img src="/assets/images/footer/shape-1.svg" alt="" />
         </span>
 
         <span class="absolute bottom-0 right-0 z-[-1]">
-          <img src="assets/images/footer/shape-3.svg" alt="" />
+          <img src="/assets/images/footer/shape-3.svg" alt="" />
         </span>
 
         <span class="absolute top-0 right-0 z-[-1]">

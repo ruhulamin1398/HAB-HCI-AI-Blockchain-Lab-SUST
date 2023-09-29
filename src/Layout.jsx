@@ -25,7 +25,13 @@ import Footer from './Componenets/footer';
         <>
  
     <Nav/>
+  
+
+
+
+    <div className='min-h-[500px] '>
     <Outlet />
+    </div>
     <Footer/>
 
     

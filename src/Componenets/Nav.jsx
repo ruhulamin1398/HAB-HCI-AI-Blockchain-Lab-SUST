@@ -18,7 +18,7 @@ const Nav = () =>{
           <div className="w-60 max-w-full px-4">
           <Link to="/" className="navbar-logo block w-full py-5">
               <img
-                src="assets/images/logo/logo.png"
+                src="/assets/images/logo/logo.png"
                 alt="logo"
                 className="header-logo w-full pl-20 pr-3"
               />

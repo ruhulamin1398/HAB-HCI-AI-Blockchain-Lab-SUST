@@ -96,44 +96,46 @@ function NavigatrionUL( ) {
 
 
                   <li className="group relative">
-                    <a
-                      href="/"
+                    <Link
+                      to="/publications"
                       className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Publications
-                    </a>
+                    </Link>
                   </li>
  
 
                   <li className="group relative">
-                    <a
-                      href="#team"
+                    <Link
+                      to="/research-area"
                       className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Research Area
-                    </a>
+                    </Link>
                   </li>
 
 
                   
                   <li className="group relative">
-                    <a
-                      href="#contact"
+                    <Link
+                      to="/about"
+                      activeClassName="text-blue-300"
                       className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
 
 
                   
                   <li className="group relative">
-                    <a
-                      href="#contact"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    <Link
+                      to="/contact"
+                      activeClassName="text-blue-300"
+                      className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12  "
                     >
                       Contact
-                    </a>
+                    </Link>
                   </li>
 
 
