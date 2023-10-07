@@ -42,7 +42,7 @@ const Nav = () =>{
               </button>
               <div>
 
-                <h1 className="mb-0 text-xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug   md:leading-snug"> SUST HCI AI & Blockcahin Reserach Lab (HAB)</h1>
+                <h1 className="mb-0 text-xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug   md:leading-snug"> SUST HCI AI & Blockchain Reserach Lab (HAB)</h1>
               <nav
                 id="navbarCollapse"
                 className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white pt-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:pr-4 lg:shadow-none xl:pr-6"
