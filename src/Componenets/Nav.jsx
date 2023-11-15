@@ -1,81 +1,157 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NavigatrionUL from "./NavigatrionUL";
 
 
-const Nav = () =>{
+const Nav = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
-
-    return (
-        <>
-        
-        
-        <div
-      className="ud-header fixed top-0 left-0 z-40 flex w-full items-center bg-[#002145]  " id="navbar"
-    >
-      <div className="container">
-        <div className="relative -mx-4 flex items-center justify-between">
-          <div className="w-60 max-w-full px-4">
-          <Link to="/" className="navbar-logo block w-full py-5">
-              <img
-                src="/assets/images/logo/logo.png"
-                alt="logo"
-                className="header-logo w-full pl-20 pr-3"
-              />
-            </Link>
-          </div>
-          <div className="flex w-full items-center justify-between px-4">
-            <div>
-              <button
-                id="navbarToggler"
-                className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
-              >
-                <span
-                  className="relative my-[6px] block h-[2px] w-[30px] bg-white"
-                ></span>
-                <span
-                  className="relative my-[6px] block h-[2px] w-[30px] bg-white"
-                ></span>
-                <span
-                  className="relative my-[6px] block h-[2px] w-[30px] bg-white"
-                ></span>
-              </button>
-              <div>
-
-                <h1 className="mb-0 text-xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug   md:leading-snug"> SUST HCI AI & Blockchain Reserach Lab (HAB)</h1>
-              <nav
-                id="navbarCollapse"
-                className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white pt-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:pr-4 lg:shadow-none xl:pr-6"
-              >
-
-                <NavigatrionUL/>
-                
-              </nav>
-
-
-              </div>
+  return (
+    <>
+      <div
+        className="ud-header fixed top-0 left-0 z-40 flex w-full items-center bg-[#002145]"
+        id="navbar"
+      >
+        <div className="container">
+          <div className="relative -mx-4 flex items-center justify-between">
+            <div className="w-60 max-w-full px-4">
+              <Link to="/" className="navbar-logo block w-full py-5">
+                <img
+                  src="/assets/images/logo/logo.png"
+                  alt="logo"
+                  className="header-logo w-full pl-20 pr-3"
+                />
+              </Link>
             </div>
-            {/* <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-              <a
-                href="signin.html"
-                className="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"
-              >
-                Sign In
-              </a>
-              <a
-                href="signup.html"
-                className="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-              >
-                Sign Up
-              </a>
-            </div> */}
+            <div className="flex w-full items-center justify-between px-4">
+              <div>
+                <button
+                  id="navbarToggler"
+                  className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  onClick={toggleMobileMenu}
+                >
+                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                </button>
+                <h1 className="mb-0 text-xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:leading-snug mb-5 mr-5 ml-5">
+                  {" "}
+                  SUST HCI AI & Blockchain Research Lab (HAB)
+                </h1>
+                <div
+                  className={`${isMobileMenuOpen
+                    ? "block text-white text-center"
+                    : "hidden md:hidden"
+                    } absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-[#002145] pt-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:pr-4 lg:shadow-none xl:pr-6`}
+                >
+                  <ul className="blcok lg:flex  ">
+                    <li className="group relative">
+                      <Link
+                        to="/"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Home
+                      </Link>
+                    </li>
+
+                    <li className="group relative">
+                      <Link to="/people"
+
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                      >
+                        People
+                      </Link>
+                    </li>
+                    <li className="group relative">
+                      <Link to='/project'
+                        href="#contact"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                      >
+                        Projects
+                      </Link>
+                    </li>
+
+
+
+
+                    <li className="group relative">
+                      <Link
+                        to="/publications"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                      >
+                        Publications
+                      </Link>
+                    </li>
+
+
+                    <li className="group relative">
+                      <Link
+                        to="/research-area"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                      >
+                        Research Area
+                      </Link>
+                    </li>
+
+
+
+                    <li className="group relative">
+                      <Link
+                        to="/about"
+                        activeClassName="text-blue-300"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                      >
+                        About
+                      </Link>
+                    </li>
+
+
+
+                    <li className="group relative">
+                      <Link
+                        to="/contact"
+                        activeClassName="text-blue-300"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12  "
+                      >
+                        Contact
+                      </Link>
+                    </li>
+
+                    <li className="group relative">
+                      <Link
+                        to="/login"
+                        activeClassName="text-blue-300"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12  "
+                      >
+                        Sign In
+                      </Link>
+                    </li>
+                    <li className="group relative">
+                      <Link
+                        to="/singup"
+                        activeClassName="text-blue-300"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-3 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12  "
+                      >
+                        Sign Up
+                      </Link>
+                    </li>
+
+                  </ul>
+
+
+
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-        </>
-    )
-}
+    </>
+  );
+};
 
-
-export  default Nav;
+export default Nav;
