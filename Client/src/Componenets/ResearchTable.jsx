@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ResearchTable = () => {
   return (
@@ -35,34 +35,43 @@ const ResearchTable = () => {
                     >
                       Research Area Tags
                     </th>
-                    
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
-                    <td className="px-6 py-4  ">Blockchain, AI, and Data Protection in Healthcare</td>
-                    <td className="px-6 py-4  ">Victoria Lemieux, Meng Kang, Deepansha Chhabra</td>
+                    <td className="px-6 py-4  ">
+                      Blockchain, AI, and Data Protection in Healthcare
+                    </td>
+                    <td className="px-6 py-4  ">
+                      Victoria Lemieux, Meng Kang, Deepansha Chhabra
+                    </td>
                     <td className="px-6 py-4  ">October 16, 2023</td>
                     <td className="px-6 py-4  ">-</td>
-                    <td className="px-6 py-4  ">
-                       
-                    </td>
+                    <td className="px-6 py-4  "></td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4  ">Fast-HotStuff: A Fast and Robust BFT Protocol for Blockchains</td>
-                    <td className="px-6 py-4  ">Mohammad Jalalzai, Chen Feng, Jianyu Niu, Fangyu Gai</td>
+                    <td className="px-6 py-4  ">
+                      Fast-HotStuff: A Fast and Robust BFT Protocol for
+                      Blockchains
+                    </td>
+                    <td className="px-6 py-4  ">
+                      Mohammad Jalalzai, Chen Feng, Jianyu Niu, Fangyu Gai
+                    </td>
                     <td className="px-6 py-4  ">August 15, 2023</td>
                     <td className="px-6 py-4  ">-</td>
-                    <td className="px-6 py-4  ">
-                      
-                    </td>
+                    <td className="px-6 py-4  "></td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4  ">Exploring Blockchain Technology for Chain of Custody Control in Physical Evidence: A Systematic Literature Review</td>
-                    <td className="px-6 py-4  ">Co-authored by: Danielle Batista</td>
+                    <td className="px-6 py-4  ">
+                      Exploring Blockchain Technology for Chain of Custody
+                      Control in Physical Evidence: A Systematic Literature
+                      Review
+                    </td>
+                    <td className="px-6 py-4  ">
+                      Co-authored by: Danielle Batista
+                    </td>
                     <td className="px-6 py-4  ">August 2, 2023</td>
                     <td className="px-6 py-4  ">-</td>
-                    
                   </tr>
                 </tbody>
               </table>
